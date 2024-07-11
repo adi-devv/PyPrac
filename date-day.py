@@ -1,13 +1,9 @@
-import datetime
+from datetime import datetime
 
 
 def find_day(date):
-    # Create a datetime object from the input date
-    date_obj = datetime.datetime.strptime(date, '%Y-%m-%d')
-
-    # Get the day of the week
+    date_obj = datetime.strptime(date, '%Y-%m-%d')
     day_of_week = date_obj.strftime("%A")
-
     return day_of_week
 
 
