@@ -1,3 +1,22 @@
+class A:
+    i = 0
+
+    def display(self):
+        print("In super class.")
+
+
+class B(A):
+    i = 0
+
+    def display(self):
+        print("In subclass")
+
+
+D1 = B()
+D1.display()
+
+# ---------- units
+
 units_consumed = float(input("Enter the units of electricity consumed: "))
 
 if units_consumed <= 100:
