@@ -1,4 +1,7 @@
 from tkinter import *
-widget = Label(None, text='Hello GUI world!') #  Makes an instance of the imported Label class
-widget.place(relx=.5, rely=.5) #  Packs (arranges) the new Label in its parent widget
-widget.mainloop() # Calls mainloop to bring up the window and start the tkinter event loop
+root = Tk()
+widget = Label(root)
+widget.config(text='Hello GUI world!')
+widget.pack(side=TOP, expand=YES, fill=BOTH)
+root.title('gui1g.py')
+root.mainloop()
