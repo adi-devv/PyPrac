@@ -33,7 +33,7 @@ def worker(c):
 
 if __name__ == '__main__':
     counter = Counter()
-    for i in range(2):
+    for i in range(2):  
         t = threading.Thread(target=worker, args=(counter,))
         t.start()
 
